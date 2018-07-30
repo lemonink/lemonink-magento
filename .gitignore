@@ -1,0 +1,9 @@
+tmp
+
+/dummy-1.9.x/downloader
+/dummy-1.9.x/includes/*
+/dummy-1.9.x/media/*
+/dummy-1.9.x/var/cache/*
+/dummy-1.9.x/var/session/*
+
+
