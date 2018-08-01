@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <lemonink translate="label">
+            <label>LemonInk</label>
+            <sort_order>450</sort_order>
+        </lemonink>
+    </tabs>
+    <sections>
+        <lemonink_configuration translate="label" module="adminhtml">
+            <label>Configuration</label>
+            <tab>lemonink</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <api translate="label comment">
+                    <label>API Key</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[Please enter your LemonInk API key. You can generate one in your <a href="https://lemonink.co/account/api-keys" target="_blank">account settings</a>.]]></comment>
+                    <fields>
+                        <api_key translate="label comment">
+                            <label>API Key</label>
+                            <sort_order>10</sort_order>
+                            <frontend_type>password</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </api_key>
+                    </fields>
+                </api>
+            </groups>
+        </lemonink_configuration>
+    </sections>
+</config>

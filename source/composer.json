@@ -1,0 +1,26 @@
+{
+	"name": "lemonink/lemonink-magento",
+	"description": "Magento plugin for watermarking ebooks using LemonInk",
+	"keywords": [
+		"LemonInk",
+		"magento-extension",
+		"watermarking",
+		"api"
+	],
+	"homepage": "https://lemonink.co/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "LemonInk",
+			"homepage": "https://lemonink.co/"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.3.3",
+		"lemonink/lemonink-php": ">=0.1"
+	},
+	"autoload": {
+		"psr-0": { "LemonInk\\" : "src/" }
+	}
+}

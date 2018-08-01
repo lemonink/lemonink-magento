@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+      <LemonInk_LemonInk>
+        <version>0.0.1</version>
+      </LemonInk_LemonInk>
+    </modules>
+    <global>
+        <models>
+            <lemonink_lemonink>
+                <class>LemonInk_LemonInk_Model</class>
+            </lemonink_lemonink>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <sales_order_save_commit_after>
+                <observers>
+                    <lemonink_observer>
+                        <class>lemonink_lemonink/observer</class>
+                        <method>createTransactions</method>
+                    </lemonink_observer>
+                </observers>
+            </sales_order_save_commit_after>
+        </events>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <lemonink_configuration>
+                                            <title>LemonInk Configuration</title>
+                                        </lemonink_configuration>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <tab1>
+            <general>
+                <text_field>Default value</text_field>
+            </general>
+        </tab1>
+    </default>
+</config>

@@ -7,3 +7,4 @@ tmp
 /dummy-1.9.x/var/session/*
 
 
+/source/vendor/*
